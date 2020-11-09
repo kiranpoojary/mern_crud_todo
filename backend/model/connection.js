@@ -1,9 +1,7 @@
 const mongoose = require('mongoose')
 
 
-mongoose.connect("<Mongodb:application_srv>", { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
-    //mongodb+srv://kiranpoojary:kiran123@projectcluster.rmirs.mongodb.net/todo?retryWrites=true&w=majority
-    //mongodb://localhost:27017/Todo
+mongoose.connect("mongodb://localhost:27017/Todo", { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
     if (!err) {
         console.log("Mongodb Connection Established");
     } else {
